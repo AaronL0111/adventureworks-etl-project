@@ -45,7 +45,8 @@ Below is the high-level architecture and data flow across Azure services:
 
 ## 📊 Example Output
 
-Below is an example of the aggregated “Gold” dataset containing sales metrics and customer insights.
+The screenshot below shows the **Gold layer** in Azure Data Lake, where the final aggregated tables are stored as Parquet files.  
+This confirms that the ETL pipeline successfully processed and loaded clean, analytics-ready data into the `gold` container.
 
 <img width="3072" height="804" alt="image" src="https://github.com/user-attachments/assets/e9ea495a-8f67-4172-b5d0-ab213e8672c9" />
 
