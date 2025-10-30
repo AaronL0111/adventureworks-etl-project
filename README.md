@@ -34,12 +34,12 @@ Below is the high-level architecture and data flow across Azure services:
 ### 2. Transformation (Databricks)
 - Databricks notebooks perform cleaning, joins, and aggregations using PySpark.  
 - Data moves through **Bronze → Silver → Gold** layers for reliability and reuse.  
-**(Insert Databricks notebook or job screenshot here)**  
+<img width="2404" height="1134" alt="image" src="https://github.com/user-attachments/assets/2d96591e-5206-45b0-870b-c665c0a48834" />
 
 ### 3. Loading & Visualization
 - Final Gold tables are stored in `ADLS/gold`.  
 - Data is visualized in Power BI or queried through Synapse Analytics.  
-**(Insert Power BI dashboard or SQL output screenshot here)**  
+<img width="1830" height="1020" alt="image" src="https://github.com/user-attachments/assets/411f9bae-2393-48cd-ab35-5189158a9835" />
 
 ---
 
@@ -47,19 +47,8 @@ Below is the high-level architecture and data flow across Azure services:
 
 Below is an example of the aggregated “Gold” dataset containing sales metrics and customer insights.
 
-**(Insert table preview or screenshot here)**
+<img width="3072" height="804" alt="image" src="https://github.com/user-attachments/assets/e9ea495a-8f67-4172-b5d0-ab213e8672c9" />
 
----
-
-## 🧪 Data Quality Checks
-
-Implemented validation steps ensure data accuracy and consistency:
-- Null and duplicate detection  
-- Schema validation and type checking  
-- Referential integrity between dimension and fact tables  
-- Row count validation between stages  
-
-**(Insert screenshot of validation logs or Great Expectations report here)**
 
 ---
 
