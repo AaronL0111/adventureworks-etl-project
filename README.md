@@ -56,4 +56,6 @@ This confirms that the ETL pipeline successfully processed and loaded clean, ana
 
 ## 📚 Reference
 
+This project uses the AdventureWorks dataset available on Kaggle as its primary data source. The dataset provides realistic business data for demonstrating ETL, data modeling, and analytics workflows.
+
 - [AdventureWorks Dataset on Kaggle](https://www.kaggle.com/datasets/ukveteran/adventure-works)
