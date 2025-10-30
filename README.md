@@ -18,10 +18,7 @@ Below is the high-level architecture and data flow across Azure services:
 - **Azure Databricks:** Handles scalable data transformation using PySpark.  
 - **Power BI / Synapse:** Consumes the Gold-layer data for visualization and insights.
 
----
-
 ## 📁 Project Structure
-
 
 ## ⚙️ Pipeline Flow
 
@@ -39,17 +36,12 @@ Below is the high-level architecture and data flow across Azure services:
 - A Power BI dashboard prototype was created to demonstrate a successful connection between the ETL pipeline and the analytics layer. This visualization serves as a proof of concept showing that transformed data can be accessed and explored by analysts, rather than a deep analytical report.
 <img width="1830" height="1020" alt="image" src="https://github.com/user-attachments/assets/411f9bae-2393-48cd-ab35-5189158a9835" />
 
----
-
 ## 📊 Example Output
 
 The screenshot below shows the **Gold layer** in Azure Data Lake, where the final aggregated tables are stored as Parquet files.  
 This confirms that the ETL pipeline successfully processed and loaded clean, analytics-ready data into the `gold` container.
 
 <img width="3072" height="804" alt="image" src="https://github.com/user-attachments/assets/e9ea495a-8f67-4172-b5d0-ab213e8672c9" />
-
-
----
 
 ## 🧰 Tech Stack
 
