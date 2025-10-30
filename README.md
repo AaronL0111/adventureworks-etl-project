@@ -37,8 +37,8 @@ Below is the high-level architecture and data flow across Azure services:
 <img width="2404" height="1134" alt="image" src="https://github.com/user-attachments/assets/2d96591e-5206-45b0-870b-c665c0a48834" />
 
 ### 3. Loading & Visualization
-- Final Gold tables are stored in `ADLS/gold`.  
-- Data is visualized in Power BI or queried through Synapse Analytics.  
+- The final Gold-layer tables are stored in ADLS/gold, making them ready for reporting and analytics.
+- A Power BI dashboard prototype was created to demonstrate a successful connection between the ETL pipeline and the analytics layer. This visualization serves as a proof of concept showing that transformed data can be accessed and explored by analysts, rather than a deep analytical report.
 <img width="1830" height="1020" alt="image" src="https://github.com/user-attachments/assets/411f9bae-2393-48cd-ab35-5189158a9835" />
 
 ---
