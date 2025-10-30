@@ -23,12 +23,13 @@ Below is the high-level architecture and data flow across Azure services:
 ## ⚙️ Pipeline Flow
 
 ### 1. Extraction (ADF)
-- The Azure Data Factory pipeline automates data ingestion from the AdventureWorks source into the raw layer of Azure Data Lake. The process uses a Lookup activity to retrieve a list of source files, followed by a ForEach loop that dynamically copies each CSV file into the designated raw container in ADLS.
+- The Azure Data Factory pipeline automates data ingestion from the AdventureWorks source into the raw layer of Azure Data Lake. It uses a Lookup activity to retrieve a list of source files, followed by a ForEach loop that dynamically copies each CSV file into the designated raw container in ADLS.
+- The complete ADF pipeline configuration, including all Lookup and ForEach, can be found in the adf/ folder as JSON files. These definitions allow the pipeline to be imported directly into Azure Data Factory.
 <img width="2500" height="1258" alt="image" src="https://github.com/user-attachments/assets/b0b4dc39-6c46-4917-beda-07885dafa089" />
  
 ### 2. Transformation (Databricks)
-- Databricks notebooks perform cleaning, joins, and aggregations using PySpark.  
-- Data moves through **Bronze → Silver → Gold** layers for reliability and reuse.  
+- The Databricks notebook performs all transformation logic, including cleaning, joins, and aggregations using PySpark. Data flows through the Bronze → Silver → Gold layers to ensure reliability, consistency, and analytical readiness.
+- The full transformation code is available in the notebooks/ folder, where the Silver_layer.ipynb notebook contains the detailed PySpark implementation.
 <img width="2404" height="1134" alt="image" src="https://github.com/user-attachments/assets/2d96591e-5206-45b0-870b-c665c0a48834" />
 
 ### 3. Loading & Visualization
