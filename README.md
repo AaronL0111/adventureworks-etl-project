@@ -5,8 +5,6 @@ This repository showcases an **end-to-end data engineering pipeline** built usin
 
 The project demonstrates how to extract, transform, and load data from the **AdventureWorks** sample dataset into a structured **Bronze–Silver–Gold** architecture for analytics and reporting.
 
----
-
 ## 🧩 Architecture Overview
 
 Below is the high-level architecture and data flow across Azure services:
