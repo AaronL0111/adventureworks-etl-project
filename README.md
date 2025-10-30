@@ -29,8 +29,8 @@ Below is the high-level architecture and data flow across Azure services:
 
 ### 1. Extraction (ADF)
 - ADF pipelines copy raw CSV files from the AdventureWorks source into `ADLS/raw`.  
-**(Insert ADF pipeline screenshot here)**  
-
+<img width="2500" height="1258" alt="image" src="https://github.com/user-attachments/assets/b0b4dc39-6c46-4917-beda-07885dafa089" />
+ 
 ### 2. Transformation (Databricks)
 - Databricks notebooks perform cleaning, joins, and aggregations using PySpark.  
 - Data moves through **Bronze → Silver → Gold** layers for reliability and reuse.  
