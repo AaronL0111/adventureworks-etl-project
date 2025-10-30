@@ -11,7 +11,8 @@ The project demonstrates how to extract, transform, and load data from the **Adv
 
 Below is the high-level architecture and data flow across Azure services:
 
-**(Insert architecture diagram here — e.g., ADF → ADLS → Databricks → Power BI)**
+<img width="1970" height="1092" alt="image" src="https://github.com/user-attachments/assets/6d78f40e-a29d-4ca5-b487-b30c77929a3c" />
+
 
 ### Components:
 - **Azure Data Factory (ADF):** Manages pipeline orchestration and scheduling.  
