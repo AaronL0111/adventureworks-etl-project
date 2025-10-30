@@ -73,3 +73,6 @@ Implemented validation steps ensure data accuracy and consistency:
 | **Visualization** | Power BI / Synapse Analytics | Data analysis & dashboarding |
 | **Testing** | PyTest / Great Expectations | Unit testing & data validation |
 
+## 📚 Reference
+
+- [AdventureWorks Dataset on Kaggle](https://www.kaggle.com/datasets/ukveteran/adventure-works)
