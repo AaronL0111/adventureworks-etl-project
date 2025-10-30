@@ -28,7 +28,7 @@ Below is the high-level architecture and data flow across Azure services:
 ## ⚙️ Pipeline Flow
 
 ### 1. Extraction (ADF)
-- ADF pipelines copy raw CSV files from the AdventureWorks source into `ADLS/raw`.  
+- The Azure Data Factory pipeline automates data ingestion from the AdventureWorks source into the raw layer of Azure Data Lake. The process uses a Lookup activity to retrieve a list of source files, followed by a ForEach loop that dynamically copies each CSV file into the designated raw container in ADLS.
 <img width="2500" height="1258" alt="image" src="https://github.com/user-attachments/assets/b0b4dc39-6c46-4917-beda-07885dafa089" />
  
 ### 2. Transformation (Databricks)
